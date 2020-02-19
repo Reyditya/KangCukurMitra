@@ -8,6 +8,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
@@ -42,7 +43,10 @@ public class AdapterRiwayatOrder extends RecyclerView.Adapter<AdapterRiwayatOrde
 
     @Override
     public void onBindViewHolder(@NonNull BuatDesainViewHolder holder, int position) {
-
+        ModelRiwayatOrder modelRiwayatOrder = list.get(position);
+        holder.namaRiwayat.setText(modelRiwayatOrder.getNamaRiwayat());
+        holder.tglRiwayat.setText(modelRiwayatOrder.getTglRiwayat());
+        holder.hargaRiwayat.setText(modelRiwayatOrder.getHargaRiwayat());
     }
 
     @Override
