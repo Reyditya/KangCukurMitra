@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linear"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/namaRiwayat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/ruda"
+            android:text="Indhira Sasadhara"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tglRiwayat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/colorGrey"
+                android:fontFamily="@font/ruda"
+                android:text="02 Januari 2020"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/hargaRiwayat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAlignment="textEnd"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold"
+                android:fontFamily="@font/ruda"
+                android:text="Rp.20.000" />
+        </LinearLayout>
+
+</LinearLayout>
